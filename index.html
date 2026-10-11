@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0d0509" />
-  <title>Selamat Ulang Tahun, Keyzia ✦</title>
+  <meta name="theme-color" content="#171020" />
+  <meta name="description" content="Hadiah kecil penuh cinta untuk ulang tahun Ibu tersayang." />
+  <title>Untuk Ibu Sayang | ibucantikmanis</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,8 +30,38 @@
   <link rel="stylesheet" href="./css/alignment-fix.css" />
   <link rel="stylesheet" href="./css/enhancements.css" />
   <link rel="stylesheet" href="./css/ice-theme.css" />
+  <link rel="stylesheet" href="./css/mom-theme.css" />
 </head>
 <body>
+
+<div class="pin-gate" id="pinGate">
+  <div class="pin-gate-card">
+    <span class="pin-gate-heart" aria-hidden="true">♡</span>
+    <p class="pin-gate-eyebrow">✦ &nbsp; hadiah kecil untukmu &nbsp; ✦</p>
+    <h1 class="pin-gate-title">Untuk Ibu Sayang</h1>
+    <p class="pin-gate-copy">Masukkan PIN untuk membuka kejutan ulang tahunmu.</p>
+    <form class="pin-gate-form" id="pinForm">
+      <label class="pin-gate-label" for="pinInput">PIN hadiah</label>
+      <input
+        class="pin-gate-input"
+        id="pinInput"
+        name="pin"
+        type="password"
+        inputmode="numeric"
+        pattern="[0-9]{4,6}"
+        minlength="4"
+        maxlength="6"
+        autocomplete="off"
+        aria-describedby="pinError"
+        placeholder="••••••"
+        required
+      />
+      <p class="pin-gate-error" id="pinError" role="alert" aria-live="polite"></p>
+      <button class="pin-gate-button" type="submit">Buka hadiah ✦</button>
+    </form>
+    <p class="pin-gate-footnote">Dengan segenap cinta, untuk Ibu 🤍</p>
+  </div>
+</div>
 
 <!-- ═══════════════════════════════════════════════════════════
      FLOATING HEARTS (ambient, fixed overlay)
@@ -59,16 +90,16 @@
 <!-- ═══════════════════════════════════════════════════════════
      CINEMATIC INTRO SCREEN
 ═══════════════════════════════════════════════════════════════ -->
-<div class="intro" id="intro" role="dialog" aria-label="Birthday intro">
+<div class="intro" id="intro" role="dialog" aria-label="Pembuka hadiah ulang tahun">
   <div class="intro-bg"></div>
   <canvas class="intro-canvas" id="introCanvas"></canvas>
   <div class="intro-aurora" aria-hidden="true"></div>
   <div class="intro-content">
     <div class="intro-logo" id="introLogo" aria-hidden="true">♡</div>
     <div class="intro-lines">
-      <span class="intro-line-text" id="iLine1">A Luxury Birthday Experience</span>
-      <div class="intro-line-large" aria-label="Happy Birthday">Happy B'day</div>
-      <span class="intro-line-sub" id="iLine3">with all my love</span>
+      <span class="intro-line-text" id="iLine1">Sebuah hadiah kecil penuh cinta</span>
+      <div class="intro-line-large" aria-label="Selamat Ulang Tahun">Selamat Ulang Tahun</div>
+      <span class="intro-line-sub" id="iLine3">untuk Ibu tersayang</span>
     </div>
     <div class="intro-rule" id="introRule"></div>
     <div class="intro-date-line" id="introDateLine"></div>
@@ -78,23 +109,23 @@
 <!-- ═══════════════════════════════════════════════════════════
      NAVBAR
 ═══════════════════════════════════════════════════════════════ -->
-<nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
   <div class="nav-inner">
     <a class="nav-logo" href="#hero" aria-label="Home">
       <span class="nav-brand-heart">♡</span>
-      <span class="nav-brand-name">Keyzia Birthday</span>
+      <span class="nav-brand-name">Ibu Sayang</span>
     </a>
 
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <button class="hamburger" id="hamburger" aria-label="Buka atau tutup menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
 
     <ul class="nav-links" id="navLinks" role="list">
-      <li><a class="nav-link" href="#hero">Home</a></li>
-      <li><a class="nav-link" href="#gallery">Gallery</a></li>
-      <li><a class="nav-link" href="#reasons">Reasons</a></li>
-      <li><a class="nav-link" href="#message">Message</a></li>
-      <li><a class="nav-link" href="#finale">Final</a></li>
+      <li><a class="nav-link" href="#hero">Beranda</a></li>
+      <li><a class="nav-link" href="#gallery">Kenangan</a></li>
+      <li><a class="nav-link" href="#reasons">Tentang Ibu</a></li>
+      <li><a class="nav-link" href="#message">Surat</a></li>
+      <li><a class="nav-link" href="#finale">Doa</a></li>
     </ul>
   </div>
 </nav>
@@ -117,13 +148,13 @@
   <div class="hero-vignette" aria-hidden="true"></div>
 
   <div class="hero-content">
-    <p class="hero-eyebrow">✦ &nbsp; A Birthday Celebration &nbsp; ✦</p>
+    <p class="hero-eyebrow">✦ &nbsp; Hari istimewa untuk Ibu &nbsp; ✦</p>
 
     <div class="hero-title-wrap">
-      <span class="hero-script">Happy</span>
+      <span class="hero-script">Selamat</span>
       <div class="hero-title-rule" aria-hidden="true"></div>
-      <span class="hero-serif">Birthday</span>
-      <span class="hero-name">Keyzia Ibreina Ketaren</span>
+      <span class="hero-serif">Ulang Tahun</span>
+      <span class="hero-name">Ibu Sayang❤️</span>
     </div>
 
     <div class="hero-ornament" aria-hidden="true">
@@ -133,13 +164,13 @@
     </div>
 
     <p class="hero-date" id="heroDate"></p>
-    <p class="hero-tagline">Hari ini, semesta merayakanmu</p>
+    <p class="hero-tagline">Hari ini, dunia merayakan perempuan paling hebat dalam hidupku.</p>
 
     <div class="hero-cta-wrap">
-      <a href="#gallery" class="btn-luxury" data-magnetic aria-label="Explore gallery">
+      <a href="#gallery" class="btn-luxury" data-magnetic aria-label="Lihat galeri kenangan">
         <span class="btn-glow"></span>
         <span class="btn-shine"></span>
-        <span class="btn-text">Explore ✦</span>
+        <span class="btn-text">Lihat Kenangan ✦</span>
       </a>
     </div>
   </div>
@@ -152,7 +183,23 @@
 
   <div class="hero-scroll-indicator" aria-hidden="true">
     <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
-    <span>scroll</span>
+    <span>gulir</span>
+  </div>
+</section>
+
+<section class="music-section" aria-label="Lagu untuk Ibu">
+  <div class="music-card">
+    <span class="music-note" aria-hidden="true">♫</span>
+    <div class="music-copy">
+      <p class="section-pre">Lagu untuk Ibu</p>
+      <p class="music-title">“Kekal” — Nadin Amizah</p>
+    </div>
+    <a
+      class="music-link"
+      href="https://open.spotify.com/search/Kekal%20Nadin%20Amizah"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Putar di Spotify ↗</a>
   </div>
 </section>
 
@@ -161,9 +208,9 @@
 ═══════════════════════════════════════════════════════════════ -->
 <section class="gallery-section" id="gallery">
   <div class="section-header" data-aos="fade-up">
-    <p class="section-pre">Just Her</p>
-    <h2 class="section-title">A Gallery of Her Beauty</h2>
-    <p class="section-sub">Every picture proves how effortlessly she shines.</p>
+    <p class="section-pre">Potret penuh cerita</p>
+    <h2 class="section-title">Kenangan Bersama Ibu</h2>
+    <p class="section-sub">Setiap foto menyimpan hangatnya cinta dan indahnya kebersamaan kita.</p>
   </div>
 
   <div class="gallery-swiper-wrap">
@@ -182,7 +229,7 @@
 
   <div class="gallery-hint" aria-hidden="true">
     <div class="gallery-hint-line"></div>
-    <p>Swipe to explore</p>
+    <p>Geser untuk melihat kenangan</p>
     <div class="gallery-hint-line"></div>
   </div>
 </section>
@@ -194,57 +241,57 @@
   <div class="reasons-bg-glow" aria-hidden="true"></div>
 
   <div class="section-header" data-aos="fade-up">
-    <p class="section-pre">Why I Love You</p>
-    <h2 class="section-title">A Thousand Reasons &amp; Counting</h2>
-    <p class="section-sub">Just a few of the infinite ways you make my world magnificent</p>
+    <p class="section-pre">Untuk Ibu, dengan cinta</p>
+    <h2 class="section-title">Alasan Aku Selalu Bersyukur</h2>
+    <p class="section-sub">Beberapa dari begitu banyak hal yang membuat Ibu begitu berarti.</p>
   </div>
 
   <div class="reasons-grid">
     <article class="reason-card tilt-card" data-aos="fade-up" data-aos-delay="0">
       <p class="reason-number">01</p>
       <span class="reason-icon">🌹</span>
-      <h3 class="reason-title">Your Radiance</h3>
-      <p class="reason-text">You walk into a room and everything becomes more beautiful. It is an entirely unfair talent.</p>
+      <h3 class="reason-title">Cahaya Ibu</h3>
+      <p class="reason-text">Kehadiran Ibu selalu membuat rumah terasa lebih hangat dan dunia terasa lebih baik.</p>
       <div class="reason-glow"></div>
     </article>
 
     <article class="reason-card tilt-card" data-aos="fade-up" data-aos-delay="80">
       <p class="reason-number">02</p>
       <span class="reason-icon">💫</span>
-      <h3 class="reason-title">Your Laughter</h3>
-      <p class="reason-text">The sound of your laugh is the best song ever written. I would listen to it forever.</p>
+      <h3 class="reason-title">Tawa Ibu</h3>
+      <p class="reason-text">Tawa Ibu adalah salah satu suara paling menenangkan yang ingin kudengar selamanya.</p>
       <div class="reason-glow"></div>
     </article>
 
     <article class="reason-card tilt-card" data-aos="fade-up" data-aos-delay="160">
       <p class="reason-number">03</p>
       <span class="reason-icon">✨</span>
-      <h3 class="reason-title">Your Kindness</h3>
-      <p class="reason-text">The way you treat people — with such gentle grace — reminds me every day what beauty truly means.</p>
+      <h3 class="reason-title">Hati yang Tulus</h3>
+      <p class="reason-text">Kebaikan dan kelembutan Ibu mengajarkanku arti mencintai dengan sepenuh hati.</p>
       <div class="reason-glow"></div>
     </article>
 
     <article class="reason-card tilt-card" data-aos="fade-up" data-aos-delay="240">
       <p class="reason-number">04</p>
       <span class="reason-icon">🌙</span>
-      <h3 class="reason-title">Your Strength</h3>
-      <p class="reason-text">You carry the world with elegance and never let anything dim the light you carry inside you.</p>
+      <h3 class="reason-title">Kekuatan Ibu</h3>
+      <p class="reason-text">Di balik semua pengorbanan yang terlihat maupun tak terlihat, Ibu selalu memberi yang terbaik.</p>
       <div class="reason-glow"></div>
     </article>
 
     <article class="reason-card tilt-card" data-aos="fade-up" data-aos-delay="320">
       <p class="reason-number">05</p>
       <span class="reason-icon">🌸</span>
-      <h3 class="reason-title">Your Heart</h3>
-      <p class="reason-text">Loving you feels like coming home to a place I never knew I was missing until you.</p>
+      <h3 class="reason-title">Tempatku Pulang</h3>
+      <p class="reason-text">Kasih sayang Ibu selalu menjadi tempat ternyaman untuk pulang, dalam keadaan apa pun.</p>
       <div class="reason-glow"></div>
     </article>
 
     <article class="reason-card tilt-card" data-aos="fade-up" data-aos-delay="400">
       <p class="reason-number">06</p>
       <span class="reason-icon">⭐</span>
-      <h3 class="reason-title">Simply You</h3>
-      <p class="reason-text">Every little thing — your voice, your smile, your thoughts — I love every single piece of you.</p>
+      <h3 class="reason-title">Ibu, Apa Adanya</h3>
+      <p class="reason-text">Aku menyayangi setiap hal tentang Ibu—senyumnya, ceritanya, dan seluruh cinta yang Ibu beri.</p>
       <div class="reason-glow"></div>
     </article>
   </div>
@@ -259,54 +306,42 @@
 
   <div class="message-container">
     <div class="section-header" data-aos="fade-up">
-      <p class="section-pre">A Letter For You</p>
-      <h2 class="section-title">Words From My Heart</h2>
+      <p class="section-pre">Surat kecil untuk Ibu</p>
+      <h2 class="section-title">Dari Hati yang Paling Dalam</h2>
     </div>
 
     <div class="message-card tilt-card">
 
-      <!-- ✏️ EDITABLE LETTER — edit your personal message below -->
       <div class="message-letter">
-        <span class="message-letter-label">✦ &nbsp; a letter, just for you &nbsp; ✦</span>
+        <span class="message-letter-label">✦ &nbsp; untuk ibu sayang❤️ &nbsp; ✦</span>
 
         <div class="message-text">
-          <!--
-            ══════════════════════════════════════════════
-            ✏️  TULIS PESANMU DI SINI
-            Setiap <p class="message-para"> = satu paragraf.
-            Gunakan <span class="message-highlight">teks</span>
-            untuk kalimat yang ingin kamu tonjolkan.
-            ══════════════════════════════════════════════
-          -->
-
           <p class="message-para">
-            Selamat ulang tahun, sayangku! Gak nyangka ya, kamu sudah nambah umur
-            dan udh mau dewasa aja.
+            Happy birthday to the woman who deserves the world and more🤍
+            Ibu, thank you for everything you do, seen and unseen.
           </p>
 
           <p class="message-para">
-            Di umur yang baru ini, aku doain kamu
-            <span class="message-highlight">makin sehat, makin murah rezeki, makin bahagia</span>,
-            dan semoga kita bisa bikin lebih banyak memori indah ke depannya.
+            <span class="message-highlight">Your love, strength and sacrifices never go unnoticed</span>,
+            and I'm so grateful to have you as my ibu.
           </p>
 
           <p class="message-para">
-            Semoga kamu selaluu jumpa hal-hal yang baik yaa, sayangg,
-            dan jangan pernah lagii sedih yaa, sayangku.
+            You're my safe place and my role model. I hope today reminds you
+            of how loved, appreciated and special you truly are, because you
+            deserve nothing less than the best.
           </p>
 
           <p class="message-para">
-            Sekali lagi, happy birthday, girl!
-            <span class="message-highlight">You mean the world to me.</span>
+            <span class="message-highlight">I love you always, ibuuuu🤍🫶🏻</span>
           </p>
         </div>
 
         <div class="message-signature">
           <span class="message-signature-name">Dengan segenap cinta</span>
-          <span class="message-signature-sub">✦ &nbsp; Prince G &nbsp; ✦</span>
+          <span class="message-signature-sub">✦ &nbsp; Anakmu yang selalu menyayangimu &nbsp; ✦</span>
         </div>
       </div>
-      <!-- ✏️ END EDITABLE LETTER -->
 
       <!-- Closing -->
       <div class="message-final">
@@ -315,8 +350,8 @@
           <span class="divider-diamond">✦</span>
           <div class="divider-line"></div>
         </div>
-        <p class="message-final-text">Forever &amp; Always</p>
-        <p class="message-final-sub">You mean the world to me — Happy Birthday, Keyzia.</p>
+        <p class="message-final-text">Selalu kusayangi, sampai kapan pun</p>
+        <p class="message-final-sub">Selamat ulang tahun, Ibu Sayang❤️. Ibu adalah hadiah terindah dalam hidupku.</p>
       </div>
     </div>
   </div>
@@ -332,8 +367,8 @@
 
   <div class="finale-content">
     <span class="finale-icon" aria-hidden="true">♡</span>
-    <p class="finale-pre">✦ &nbsp; the end &amp; the beginning &nbsp; ✦</p>
-    <h2 class="finale-title">Happy <em>Birthday</em></h2>
+    <p class="finale-pre">✦ &nbsp; dengan cinta, untuk Ibu &nbsp; ✦</p>
+    <h2 class="finale-title">Selamat <em>Ulang Tahun</em></h2>
 
     <div class="finale-divider" aria-hidden="true">
       <div class="divider-line"></div>
@@ -341,12 +376,12 @@
       <div class="divider-line"></div>
     </div>
 
-    <p class="finale-quote">"You are my today and all of my tomorrows."</p>
-    <p class="finale-wish">Here is to you — and to every magnificent year ahead. 🌹</p>
+    <p class="finale-quote">“Kasih Ibu adalah rumah yang selalu kubawa di dalam hati.”</p>
+    <p class="finale-wish">Semoga Ibu selalu sehat, bahagia, dan dikelilingi cinta. I love you, Bu. 🤍</p>
 
-    <button class="confetti-btn" id="confettiBtn" aria-label="Celebrate with confetti">
+    <button class="confetti-btn" id="confettiBtn" aria-label="Rayakan dengan konfeti">
       <span class="confetti-btn-glow"></span>
-      <span class="confetti-btn-text">✦ Celebrate ✦</span>
+      <span class="confetti-btn-text">✦ Rayakan ✦</span>
     </button>
   </div>
 </section>
@@ -363,10 +398,10 @@
   </div>
   <div class="footer-content">
     <div class="footer-diamond" aria-hidden="true">♡</div>
-    <h3 class="footer-title">Made With Love</h3>
-    <p class="footer-sub">For the most extraordinary person in my world</p>
-    <p class="footer-quote">"In you, I found everything I never knew I was searching for."</p>
-    <p class="footer-copy">Happy Birthday &nbsp;✦&nbsp; With All My Love</p>
+    <h3 class="footer-title">Dibuat dengan Cinta</h3>
+    <p class="footer-sub">Untuk perempuan paling istimewa di hidupku</p>
+    <p class="footer-quote">“Terima kasih sudah menjadi Ibu terbaik yang bisa kumiliki.”</p>
+    <p class="footer-copy">Selamat Ulang Tahun, Ibu &nbsp;✦&nbsp; Dengan segenap cinta</p>
   </div>
 </footer>
 

@@ -365,7 +365,7 @@ function initIntro() {
   document.body.classList.add('intro-active');
 
   if (dateLine) {
-    dateLine.textContent = new Date().toLocaleDateString('en-US', {
+    dateLine.textContent = new Date().toLocaleDateString('id-ID', {
       year: 'numeric', month: 'long', day: 'numeric',
     });
   }
@@ -526,52 +526,52 @@ function initGallery() {
     {
       img:     './assets/images/img1.jpeg',
       num:     '01',
-      title:   'Effortlessly Beautiful',
-      quote:   '"Even the simplest moment turns perfect with you in it."',
-      fallback:'linear-gradient(135deg,#0d0509 0%,#2a0a1a 40%,#3d0f26 70%,#6b1a3f 100%)',
+      title:   'Senyum Kesayangan',
+      quote:   '"Senyum Ibu selalu menjadi hal favoritku."',
+      fallback:'linear-gradient(135deg,#171020 0%,#302044 40%,#553b70 70%,#8061a8 100%)',
       icon:    '❄️',
-      iconBg1: 'rgba(79,195,247,0.2)',
-      iconBg2: 'rgba(79,195,247,0.12)',
+      iconBg1: 'rgba(196,161,255,0.2)',
+      iconBg2: 'rgba(196,161,255,0.12)',
     },
     {
       img:     './assets/images/img2.jpeg',
       num:     '02',
-      title:   'A Face Like a Dream',
-      quote:   '"Somehow, you make reality look better than imagination."',
-      fallback:'linear-gradient(135deg,#160b10 0%,#2e0d1e 40%,#4a1530 70%,#7a2050 100%)',
+      title:   'Ibu yang Istimewa',
+      quote:   '"Dunia terasa lebih indah karena ada Ibu."',
+      fallback:'linear-gradient(135deg,#21182d 0%,#36274b 40%,#574174 70%,#7960a0 100%)',
       icon:    '⭐',
-      iconBg1: 'rgba(92,107,192,0.25)',
-      iconBg2: 'rgba(144,202,249,0.15)',
+      iconBg1: 'rgba(184,154,232,0.25)',
+      iconBg2: 'rgba(216,196,255,0.15)',
     },
     {
       img:     './assets/images/img3.jpeg',
       num:     '03',
-      title:   'Pure Elegance',
-      quote:   '"There’s a quiet grace in you that speaks louder than words."',
-      fallback:'linear-gradient(135deg,#0d0509 0%,#220b14 40%,#3a1228 70%,#5e1840 100%)',
+      title:   'Kelembutan Hati',
+      quote:   '"Kebaikan Ibu selalu berbicara lebih lantang dari kata-kata."',
+      fallback:'linear-gradient(135deg,#171020 0%,#2a1c3b 40%,#493361 70%,#6d508d 100%)',
       icon:    '💎',
-      iconBg1: 'rgba(79,195,247,0.22)',
-      iconBg2: 'rgba(144,202,249,0.14)',
+      iconBg1: 'rgba(196,161,255,0.22)',
+      iconBg2: 'rgba(216,196,255,0.14)',
     },
     {
       img:     './assets/images/img4.jpeg',
       num:     '04',
-      title:   'Captured Perfection',
-      quote:   '"No filter could ever match what you naturally are."',
-      fallback:'linear-gradient(135deg,#130710 0%,#280e1c 40%,#421630 70%,#6e2052 100%)',
+      title:   'Kenangan yang Hangat',
+      quote:   '"Setiap waktu bersama Ibu adalah kenangan yang kusimpan."',
+      fallback:'linear-gradient(135deg,#1a1423 0%,#312440 40%,#4b3768 70%,#70558f 100%)',
       icon:    '🌸',
-      iconBg1: 'rgba(144,202,249,0.2)',
-      iconBg2: 'rgba(179,229,252,0.12)',
+      iconBg1: 'rgba(184,154,232,0.2)',
+      iconBg2: 'rgba(231,219,255,0.12)',
     },
     {
       img:     './assets/images/img5.jpeg',
       num:     '05',
-      title:   'Simply Irresistible',
-      quote:   '"It’s impossible not to stop and admire you."',
-      fallback:'linear-gradient(135deg,#04091a 0%,#0a1535 40%,#122060 70%,#2038a0 100%)',
+      title:   'Cinta Sepanjang Usia',
+      quote:   '"Aku akan selalu menyayangi Ibu, hari ini dan selamanya."',
+      fallback:'linear-gradient(135deg,#171020 0%,#2a2040 40%,#48386d 70%,#7259a1 100%)',
       icon:    '✨',
-      iconBg1: 'rgba(92,107,192,0.25)',
-      iconBg2: 'rgba(144,202,249,0.18)',
+      iconBg1: 'rgba(184,154,232,0.25)',
+      iconBg2: 'rgba(216,196,255,0.18)',
     },
   ];
 
@@ -766,13 +766,13 @@ function initTypewriter() {
   if (!el) return;   // ← FIXED: graceful exit if element doesn't exist
 
   const messages = [
-    'You are the most beautiful thing that has ever happened to me.',
-    'Every day with you is a gift I never want to stop unwrapping.',
-    'Happy Birthday to the one who makes my world infinitely brighter.',
-    'You are extraordinary, and I hope you feel that today and always.',
-    'In a world full of ordinary, you are the extraordinary one.',
-    'I love you more today than I did yesterday — and tomorrow I will love you even more.',
-    'Today the world celebrates you — and I celebrate you every single day.',
+    'Ibu adalah perempuan paling hebat dan paling kusayangi.',
+    'Terima kasih untuk semua cinta dan pengorbanan Ibu.',
+    'Selamat ulang tahun untuk rumah dan tempat ternyamanku.',
+    'Semoga Ibu selalu sehat, bahagia, dan merasa dicintai.',
+    'Aku bersyukur setiap hari karena terlahir sebagai anak Ibu.',
+    'I love you always, Ibu sayang 🤍',
+    'Hari ini kita merayakan Ibu, dan aku menyayangimu setiap hari.',
   ];
 
   let msgIdx   = 0;
@@ -986,7 +986,7 @@ function initAOS() {
 /* ============================================================
    INIT ALL
 ============================================================ */
-document.addEventListener('DOMContentLoaded', () => {
+function initGiftSite() {
   initHeroDate();
   initHeroParticles();
   initFooterParticles();
@@ -1003,6 +1003,38 @@ document.addEventListener('DOMContentLoaded', () => {
   initFinaleHearts();
   initIntro();
   setTimeout(initTiltCards, 200);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const pinGate = document.getElementById('pinGate');
+  const pinForm = document.getElementById('pinForm');
+  const pinInput = document.getElementById('pinInput');
+  const pinError = document.getElementById('pinError');
+
+  if (!pinGate || !pinForm || !pinInput || !pinError) {
+    initGiftSite();
+    return;
+  }
+
+  document.body.classList.add('pin-locked');
+  pinInput.focus();
+
+  pinForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (pinInput.value !== '121092') {
+      pinError.textContent = 'PIN belum tepat. Coba masukkan lagi, ya.';
+      pinInput.value = '';
+      pinInput.focus();
+      return;
+    }
+
+    pinError.textContent = '';
+    pinGate.classList.add('is-unlocked');
+    document.body.classList.remove('pin-locked');
+    window.setTimeout(() => pinGate.remove(), 500);
+    initGiftSite();
+  });
 });
 
 /* ============================================================
